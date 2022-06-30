@@ -17,10 +17,9 @@ ui <- dashboardPage(
   dashboardSidebar(
     sidebarMenu(
       div(glue("by: Jan Kozeluh"), style = "padding: 10px; color:black"),
-      menuItem("Homepage", tabName = "home_page", icon = icon("house-user", verify_fa = FALSE), selected = T),
-      menuItem("Prediction", tabName = "prediction", icon = icon("user", verify_fa = FALSE)),
-      menuItem("Current", tabName = "current", icon = icon("gear", verify_fa = FALSE)),
-      menuItem("Notes", tabName = "notes", icon = icon("notes", verify_fa = FALSE)),
+      menuItem("Homepage", tabName = "home_page", icon = icon("book", verify_fa = FALSE), selected = T),
+      menuItem("Prediction", tabName = "prediction", icon = icon("line-chart ", verify_fa = FALSE)),
+      menuItem("Current", tabName = "current", icon = icon("area-chart", verify_fa = FALSE)),
       shinyWidgets::sliderTextInput(inputId = "interval",
                                     label = "Interval:",
                                     choices = c("1m", "3m", "5m", "15m", "30m", "1h", "2h", "4h", "6h", "8h", "12h",
@@ -52,9 +51,6 @@ ui <- dashboardPage(
       ),
       tabItem(tabName = "current",
               uiOutput("currentUI"),
-      ),
-      tabItem(tabName = "notes",
-              uiOutput("notesUI"),
       )
     )
   )
