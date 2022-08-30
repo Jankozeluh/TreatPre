@@ -1,4 +1,4 @@
-pacman::p_load(shiny,shinydashboard,dashboardthemes,tidyverse,plotly,forecast)
+pacman::p_load(shiny,shinydashboard,dashboardthemes,tidyverse,plotly,forecast,glue)
 
 setwd("===your dir===")
 
