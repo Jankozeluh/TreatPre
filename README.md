@@ -1,8 +1,9 @@
 # TreatPre
 ## Predictive Crypto Analysis
+### Install Pacman package for loading first
 
 Shiny application using Binance API (BinanceR package)
-#Install Pacman package for loading first
+
 
 _NOT FINISHED_
 
